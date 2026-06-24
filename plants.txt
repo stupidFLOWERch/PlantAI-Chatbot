@@ -1,0 +1,96 @@
+TOPIC: Transpiration
+TYPE: Definition
+CONTENT: Transpiration is the process in plants where water is lost as water vapour from stomata in leaves.
+
+TOPIC: Transpiration
+TYPE: Purpose
+CONTENT: Transpiration is an inevitable consequence of photosynthesis. When plants open their stomata to take in carbon dioxide, water naturally evaporates from the moist surfaces of the leaf cells into the surrounding air
+
+TOPIC: Transpiration
+TYPE: Factor
+FACTOR: Temperature
+CONTENT: When temperature increases, the rate of transpiration increases. On cold or overcast days, it decreases.
+
+TOPIC: Transpiration
+TYPE: Factor
+FACTOR: Light intensity
+CONTENT: High light intensity increases transpiration because stomata open during photosynthesis.
+
+TOPIC: Transpiration
+TYPE: Factor
+FACTOR: Wind
+CONTENT: Wind increases transpiration by speeding up evaporation from leaf surfaces.
+
+TOPIC: Transpiration
+TYPE: Factor
+FACTOR: Humidity
+CONTENT: Dry air (low humidity) increases transpiration because evaporation happens faster in dry conditions.
+
+TOPIC: Transpiration
+TYPE: Function
+CONTENT: Transpiration provides water to keep cells turgid in order to support the structure of the plant.
+
+TOPIC: Transpiration
+TYPE: Function
+CONTENT: Transpiration provides water to leaf cells for photosynthesis and transporting mineral ions.
+
+TOPIC: Transpiration
+TYPE: Condition
+CONTENT: Transpiration occurs during daylight.
+
+TOPIC: Transpiration System
+TYPE: Concept
+CONTENT: Root hairs are the first step in the water transport pathway in plants.
+
+TOPIC: Guttation
+TYPE: Definition
+CONTENT: Guttation is the process where water is lost from plants in liquid form through hydathodes at the edges of leaves.
+
+TOPIC: Guttation
+TYPE: Condition
+CONTENT: Guttation usually occurs at night or when air humidity is high.
+
+TOPIC: Transport
+TYPE: Xylem
+CONTENT: The xylem transports water and minerals from the roots to the leaves.
+
+TOPIC: Transport
+TYPE: Phloem
+CONTENT: The phloem transports food (glucose) from leaves to stems and roots.
+
+TOPIC: Active Transport
+TYPE: Definition
+CONTENT: Active transport is used when mineral concentration is lower in soil than inside the cell.
+
+TOPIC: Root Hair Cell
+TYPE: Function
+CONTENT: Root hairs absorb water for photosynthesis, supply mineral salts for growth and metabolism, and initiate the plant’s water transport pathway.
+
+TOPIC: Root Hair Cell
+TYPE: Definition
+CONTENT: Root hair cells are specialised epidermal cells found on young roots. They are responsible for absorbing water and mineral salts from the soil.
+
+TOPIC: Root Hair Cell
+TYPE: Fact
+CONTENT: A single rye plant can have up to 14 billion root hairs.
+
+TOPIC: Root Hair Cell
+TYPE: Adaptation
+CONTENT: Root hair cells have long, thin projections that greatly increase surface area for absorption. This allows extensive contact with soil particles and can increase root surface area by up to 10 times.
+
+TOPIC: Root Hair Cell
+TYPE: Adaptation
+CONTENT: Root hair cells have a thin cell wall which allows easier movement of water.
+
+TOPIC: Root Hair Cell
+TYPE: Adaptation
+CONTENT: Root hair cells contain a large vacuole which helps maintain a concentration gradient for water absorption.
+
+TOPIC: Water Absorption
+TYPE: Process
+CONTENT: Water enters root hair cells by osmosis. Osmosis is the movement of water molecules from a region of higher water concentration in the soil to a region of lower water concentration inside the root hair cell through a partially permeable membrane.
+
+TOPIC: Mineral Absorption
+TYPE: Process
+CONTENT: Mineral salts such as nitrates and magnesium ions are absorbed from the soil by diffusion or active transport.
+
