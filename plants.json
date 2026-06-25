@@ -1,0 +1,254 @@
+[
+  {
+    "topic": "Plant Cell",
+    "chunks": [
+      {
+        "type": "definition",
+        "text": "Plant cell is the basic structural and functional unit of plants."
+      },
+      {
+        "type": "key_points",
+        "text": "Main parts of a plant cell include: cell wall, cell membrane, cytoplasm, nucleus, chloroplast, vacuole."
+      },
+      {
+        "type": "function",
+        "text": "Cell wall provides support and structure. Chloroplast is responsible for photosynthesis."
+      },
+      {
+        "type": "misconception",
+        "text": "Common mistake: thinking animal cells have cell wall. Only plant cells have cell wall."
+      }
+    ]
+  },
+  {
+    "topic": "Photosynthesis",
+    "level": "Form 1-3",
+    "chunks": [
+      {
+        "type": "definition",
+        "text": "Photosynthesis is a process where plants use sunlight, carbon dioxide and water to produce glucose and oxygen."
+      },
+      {
+        "type": "simple_explanation",
+        "text": "Plants use sunlight to make sugar in leaves."
+      },
+      {
+        "type": "process",
+        "text": "1. Light is absorbed by chlorophyll. 2. Water is absorbed by roots. 3. Glucose is produced in leaves."
+      },
+      {
+        "type": "key_points",
+        "text": "chloroplast, sunlight, chlorophyll, glucose, oxygen"
+      },
+      {
+        "type": "misconception",
+        "text": "Common mistake: Plants get food from soil. Correct: Plants make their own food using photosynthesis. Soil only provides minerals."
+      },
+      {
+        "type": "exam_question",
+        "text": "Q: What is photosynthesis? A: Process where plants make glucose using sunlight."
+      }
+    ],
+    "tags": ["biology", "plants", "form1"]
+  },
+  {
+    "topic": "Transpiration",
+    "level": "Form 1-3",
+    "chunks": [
+      {
+        "type": "definition",
+        "text": "Transpiration is the loss of water vapour from leaves through stomata."
+      },
+      {
+        "type": "key_points",
+        "text": "Main structures involved: stomata, leaf. Process involves water vapour leaving the plant through evaporation."
+      },
+      {
+        "type": "process",
+        "text": "Water is absorbed by roots, transported to leaves, and then evaporates as water vapour through stomata."
+      },
+      {
+        "type": "factors",
+        "text": "Rate of transpiration is affected by temperature, wind, humidity, and light."
+      },
+      {
+        "type": "misconception",
+        "text": "Common mistake: thinking transpiration is only evaporation from soil. Correct: transpiration happens in leaves through stomata."
+      }
+    ]
+  },
+  {
+    "topic": "Germination",
+    "level": "Form 1-3",
+    "chunks": [
+      {
+        "type": "definition",
+        "text": "Germination is the process by which a seed grows into a new plant."
+      },
+      {
+        "type": "requirements",
+        "text": "Conditions needed for germination include water, oxygen, and suitable temperature."
+      },
+      {
+        "type": "not_required",
+        "text": "Light is not required for germination."
+      },
+      {
+        "type": "key_points",
+        "text": "Seeds need water to activate growth, oxygen for respiration, and suitable temperature for enzyme activity."
+      },
+      {
+        "type": "misconception",
+        "text": "Common mistake: thinking light is required for germination. Correct: light is not needed; water, oxygen, and temperature are essential."
+      }
+    ]
+  },
+  {
+    "topic": "Plant Transport System",
+    "level": "Form 1-3",
+    "chunks": [
+      {
+        "type": "definition",
+        "text": "The plant transport system is a system that transports water, minerals, and food in plants."
+      },
+      {
+        "type": "key_components",
+        "text": "The main transport tissues are xylem and phloem."
+      },
+      {
+        "type": "xylem",
+        "text": "Xylem transports water and minerals from roots upward to the rest of the plant."
+      },
+      {
+        "type": "phloem",
+        "text": "Phloem transports food (glucose) in both directions throughout the plant."
+      },
+      {
+        "type": "comparison",
+        "text": "Xylem transports water upward only, while phloem transports food in both directions."
+      },
+      {
+        "type": "misconception",
+        "text": "Common mistake: confusing xylem and phloem functions. Xylem is for water, phloem is for food."
+      }
+    ]
+  },
+  {
+    "topic": "Plant Nutrition",
+    "level": "Form 1-3",
+    "chunks": [
+      {
+        "type": "definition",
+        "text": "Plant nutrition is the process where plants make their own food using photosynthesis and absorb minerals from the soil."
+      },
+      {
+        "type": "key_minerals",
+        "text": "Important minerals for plants include nitrate, phosphate, and magnesium."
+      },
+      {
+        "type": "function_of_minerals",
+        "text": "Nitrate is needed for growth, phosphate is needed for energy transfer, and magnesium is needed to form chlorophyll."
+      },
+      {
+        "type": "deficiency_symptoms",
+        "text": "Magnesium deficiency causes yellow leaves. Nitrate deficiency causes weak growth."
+      },
+      {
+        "type": "misconception",
+        "text": "Common mistake: thinking plants only need water. In reality, plants need water, light, carbon dioxide, and minerals to grow properly."
+      }
+    ]
+  },
+  {
+    "topic": "Plant Reproduction",
+    "level": "Form 1-3",
+    "chunks": [
+      {
+        "type": "definition",
+        "text": "Plant reproduction is the process of producing new plants through flowers and seeds."
+      },
+      {
+        "type": "key_process",
+        "text": "Plant reproduction involves two main processes: pollination and fertilisation."
+      },
+      {
+        "type": "flower_parts",
+        "text": "The main reproductive parts of a flower are the stamen (male part) and pistil (female part)."
+      },
+      {
+        "type": "explanation",
+        "text": "Pollination is the transfer of pollen from the stamen to the pistil. Fertilisation is the fusion of male and female gametes after pollination."
+      },
+      {
+        "type": "misconception",
+        "text": "Common mistake: confusing pollination with fertilisation. Pollination happens first, fertilisation happens after."
+      }
+    ]
+  },
+  {
+    "topic": "Seed Dispersal",
+    "level": "Form 1-3",
+    "chunks": [
+      {
+        "type": "definition",
+        "text": "Seed dispersal is the process of spreading seeds away from the parent plant."
+      },
+      {
+        "type": "methods",
+        "text": "Seeds can be dispersed by wind, water, animals, or explosion."
+      },
+      {
+        "type": "purpose",
+        "text": "The purpose of seed dispersal is to reduce competition between the parent plant and new seedlings."
+      },
+      {
+        "type": "misconception",
+        "text": "Common mistake: thinking seed dispersal is the same as germination. Dispersal is seed spreading, germination is seed growth."
+      }
+    ]
+  },
+  {
+    "topic": "Plant Adaptation",
+    "level": "Form 1-3",
+    "chunks": [
+      {
+        "type": "definition",
+        "text": "Plant adaptation refers to features that help plants survive in their environment."
+      },
+      {
+        "type": "habitats",
+        "text": "Plants adapt to different habitats such as deserts and aquatic environments."
+      },
+      {
+        "type": "desert_adaptations",
+        "text": "Desert plants have thick cuticles, small leaves, and deep roots to reduce water loss and absorb water efficiently."
+      },
+      {
+        "type": "aquatic_adaptations",
+        "text": "Aquatic plants have air spaces for buoyancy and floating leaves to stay on the water surface."
+      }
+    ]
+  },
+  {
+    "topic": "Plant Tropism",
+    "level": "Form 1-3",
+    "chunks": [
+      {
+        "type": "definition",
+        "text": "Plant tropism is the directional growth response of plants to external stimuli."
+      },
+      {
+        "type": "types",
+        "text": "Examples of tropism include phototropism (response to light) and geotropism (response to gravity)."
+      },
+      {
+        "type": "explanation",
+        "text": "Phototropism causes plants to grow toward light, while geotropism controls root and shoot growth direction."
+      },
+      {
+        "type": "misconception",
+        "text": "Common mistake: thinking plants move like animals. Plants do not move locations; they grow in response to stimuli."
+      }
+    ]
+  }
+]

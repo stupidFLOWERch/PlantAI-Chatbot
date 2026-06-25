@@ -88,7 +88,11 @@ CONTENT: Root hair cells contain a large vacuole which helps maintain a concentr
 
 TOPIC: Water Absorption
 TYPE: Process
-CONTENT: Water enters root hair cells by osmosis. Osmosis is the movement of water molecules from a region of higher water concentration in the soil to a region of lower water concentration inside the root hair cell through a partially permeable membrane.
+CONTENT: Water enters root hair cells by osmosis. 
+
+TOPIC: Osmosis
+Type: Definition
+CONTENT: Osmosis is the movement of water molecules from a region of higher water concentration in the soil to a region of lower water concentration inside the root hair cell through a partially permeable membrane.
 
 TOPIC: Mineral Absorption
 TYPE: Process

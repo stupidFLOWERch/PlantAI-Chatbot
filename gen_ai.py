@@ -25,7 +25,7 @@ def update_memory(user, ai):
         "ai": ai
     })
 
-    if len(history) > 5:
+    if len(history) > 3:
         history.pop(0)
 
 
@@ -45,52 +45,67 @@ def detect_intent(text):
         any(word in text for word in question_words)
     )
 
-    # mixed intent → LLM
-    if is_greeting and is_question:
-        return detect_intent_llm(text)
+    if is_question:
+        return "question"
 
     # greeting only
     if is_greeting:
         return "greeting"
 
-    # question only
-    if is_question:
-        return "question"
-
     # fallback
-    return detect_intent_llm(text)
+    return "question"
 
-def detect_intent_llm(text):
+def detect_topic(text):
+
     prompt = f"""
-Classify intent into ONLY one:
-greeting, question, unknown
+You are a biology classifier.
 
-Return ONLY JSON:
-{{"intent":"question"}}
+Classify the question into ONE topic only:
 
-Text:
+Topics:
+- Plant Cell
+- Photosynthesis
+- Transpiration
+- Germination
+- Plant Transport System
+- Plant Nutrition
+- Plant Reproduction
+- Seed Dispersal
+- Plant Adaptation
+- Plant Tropism
+
+If not related, return "unknown".
+
+Return ONLY the topic name.
+
+Question:
 {text}
 """
 
-    try:
-        response = client_ai.models.generate_content(
-            model="gemini-3.1-flash-lite",
-            contents=prompt
-        )
+    response = client_ai.models.generate_content(
+        model="gemini-3.1-flash-lite",
+        contents=prompt
+    )
 
-        raw = response.text.strip()
+    return response.text.strip()
 
-        start = raw.find("{")
-        end = raw.rfind("}") + 1
+def detect_answer_type(text):
 
-        if start == -1 or end == 0:
-            return "unknown"
+    text = text.lower()
 
-        data = json.loads(raw[start:end])
-        return data.get("intent", "unknown")
+    if "what is" in text:
+        return "definition"
+        
+    if "why" in text:
+        return "purpose"
 
-    except:
-        return "unknown"
+    if "explain" in text:
+        return "explanation"
+
+    if "mistake" in text or "common" in text:
+        return "misconception"
+
+    return "general"
 
 # -------------------------
 # Router
@@ -109,29 +124,28 @@ def route(intent):
 # -------------------------
 # Retrieve Knowledge
 # -------------------------
-def retrieve(prompt):
-    results = collection.query(
-        query_texts=[prompt],
-        n_results=3,
-        include=["documents", "distances"]
-    )
+def retrieve(prompt, topic=None):
 
-    documents = results["documents"][0]
-    distances = results["distances"][0]
+    if topic:
+        results = collection.query(
+            query_texts=[prompt],
+            n_results=3,
+            where={"topic": topic},
+            include=["documents", "metadatas"]
+        )
+    else:
+        results = collection.query(
+            query_texts=[prompt],
+            n_results=3,
+            include=["documents", "metadatas"]
+        )
 
-    # 没有相关知识
-    valid_docs = []
+    docs = results["documents"][0]
 
-    for doc, dist in zip(documents, distances):
-        if dist < 0.75:
-            valid_docs.append(doc)
+    if not docs:
+        return ""
 
-    if not valid_docs:
-        return None
-
-    return "\n\n".join(valid_docs)
-
-
+    return "\n\n".join(docs)
 
 
 # -------------------------
@@ -143,12 +157,21 @@ def chat(prompt):
     mode = route(intent)
 
     if mode == "direct":
-        return "Hello! I am your plant biology assistant."
+        return "Hello! What can I help you with ? You can ask me question about plants."
     
-    context = retrieve(prompt)
+    topic = detect_topic(prompt)
+    if topic == "unknown":
+        context = retrieve(prompt)
+    else:
+        context = retrieve(prompt, topic)
 
-    if context is None:
-        context = "No relevant knowledge found. Answer generally."
+    print("=== CONTEXT START ===")
+    print(topic)
+    print(context)
+    print("=== CONTEXT END ===")
+
+    if not context:
+        return "Don't have enough information in knowledge base."
 
     memory = ""
 
@@ -159,15 +182,16 @@ def chat(prompt):
 
 
     full_prompt = f"""
-You are a strict plant biology assistant.
+You are a strict secondary school plant biology teacher.
 
 RULES:
-- Use ONLY the KNOWLEDGE provided below.
-- Do NOT use your own knowledge.
-- If the answer is not in KNOWLEDGE, say:
-  "I don't know based on the provided knowledge base."
+1. Use ONLY the provided KNOWLEDGE.
+2. Do NOT add extra topics not in KNOWLEDGE.
+3. Do NOT expand beyond the question.
+4. Keep answer short (max 3-5 lines).
+5. If knowledge is insufficient, say "I cannot find this in my plant knowledge base."
 
-KNOWLEDGE (use only this):
+KNOWLEDGE (use this only):
 -------------------------
 {context}
 -------------------------
@@ -175,12 +199,10 @@ KNOWLEDGE (use only this):
 QUESTION:
 {prompt}
 
-IMPORTANT:
-- Do not guess.
-- Do not assume.
-- Do not hallucinate.
+
+Previous Conversation:
+{memory}
 """
-    print(context)
     response = client_ai.models.generate_content(
         model="gemini-3.1-flash-lite",
         contents=full_prompt
