@@ -550,19 +550,54 @@
         "applies_to": ["seniors", "name tag"]
     },
     {
-        "topic": "Senior NCO Lanyard - Who Wears",
-        "content": "White lanyard worn by NCOs and Staff Sergeants in Ceremonial Dress or Day Dress.",
-        "applies_to": ["senior ncos", "staff sergeants", "ceremonial", "day", "lanyard"]
+        "topic": "Senior NCO Lanyard - Colour and Who Wears",
+        "content": "White lanyard worn by NCOs, Sergeants and Staff Sergeants in Ceremonial Dress or Day Dress.",
+        "applies_to": ["senior ncos", "sergeants", "staff sergeants", "ceremonial", "day", "lanyard"]
     },
     {
         "topic": "Senior NCO Lanyard - Wearing",
         "content": "Over left shoulder, loop under left epaulette, fastened to left breast pocket side. Not more than 1' below pocket.",
-        "applies_to": ["senior ncos", "staff sergeants", "lanyard"]
+        "applies_to": ["senior ncos", "sergeants","staff sergeants", "lanyard"]
     },
     {
         "topic": "Senior NCO Lanyard - Whistle",
         "content": "Standard whistle (straight for 9-figure) fastened to the end.",
-        "applies_to": ["senior ncos", "staff sergeants", "lanyard"]
+        "applies_to": ["senior ncos", "sergeants", "staff sergeants", "lanyard"]
+    },
+    {
+        "topic": "Senior NCO Field Service Rank - Wearing",
+        "content": "NCOs, Sergeants and Staff Sergeants Field Service Rank should wear on their RIGHT Hand, with ranks logo pointed outward. It should only be worn in Drill Kit or PT Kit",
+        "applies_to": ["senior ncos", "sergeants","staff sergeants", "drill", "pt"]
+    },
+    {
+        "topic": "Staff Sergeant Sash - Colour and How to Wear",
+        "content": "Staff Sergeant Sash is blue. It is worn tightly over the left shoulder under the left epaulette, on top of the haversack and passing under the belt on the right side.",
+        "applies_to": ["staff sergeants", "sash"]
+    },
+    {
+        "topic": "Sergeant Sash - Colour and How to Wear",
+        "content": "Sergeant Sash is red. It is worn tightly over the left shoulder under the left epaulette, on top of the haversack and passing under the belt on the right side. ",
+        "applies_to": ["sergeants", "sash"]
+    },
+    {
+        "topic": "Staff Sergeant Accoutrements - Ceremonial Dress",
+        "content": "Senior's Shirt, blue sash over the haversack, chevron with badges, and parade cane (optional).",
+        "applies_to": ["staff sergeants", "accoutrements", "ceremonial"]
+    },
+    {
+        "topic": "Staff Sergeant Accoutrements - Day Dress",
+        "content": "Navy Blue Shirt, blue sash over the haversack, chevron with badges and parade cane (optional).",
+        "applies_to": ["staff sergeants", "accoutrements", "day"]
+    },
+    {
+        "topic": "Sergeant Accoutrements - Ceremonial Dress",
+        "content": "Senior's Shirt, red sash over the haversack, chevron with badges and parade cane (optional).",
+        "applies_to": ["sergeants", "accoutrements", "ceremonial"]
+    },
+    {
+        "topic": "Sergeant Accoutrements - Day Dress",
+        "content": "Navy Blue Shirt, red sash over the haversack and chevron with badges. No parade cane.",
+        "applies_to": ["sergeants", "accoutrements", "day"]
     },
     {
         "topic": "Senior Necktie - Design",
@@ -611,7 +646,7 @@
     },
     {
         "topic": "Senior Footwear - Socks",
-        "content": "Navy blue socks of plain design.",
+        "content": "Senior members wear navy blue socks of plain design with their uniform.",
         "applies_to": ["seniors", "footwear"]
     },
     {
@@ -625,23 +660,8 @@
         "applies_to": ["seniors", "haversack"]
     },
     {
-        "topic": "Senior Haversack Assembly - Method 1",
-        "content": "Insert the longer strap into the slide and pull the slide to the centre of the strap.",
-        "applies_to": ["seniors", "haversack"]
-    },
-    {
-        "topic": "Senior Haversack Assembly - Method 2",
-        "content": "Insert the remaining edge of the strap into the loop. If not too long, secure the Velcro around the loop and at the slide.",
-        "applies_to": ["seniors", "haversack"]
-    },
-    {
-        "topic": "Senior Haversack Assembly - Method 3",
-        "content": "Insert the Velcro edge of the strap around the centre bar of the slide and secure.",
-        "applies_to": ["seniors", "haversack"]
-    },
-    {
-        "topic": "Senior Haversack Assembly - Method 4",
-        "content": "Fasten the brass button and split hook on the pouch.",
+        "topic": "Senior Haversack Assembly - Full Guide",
+        "content": "To assemble the Senior haversack: Step 1: Insert the longer strap into the slide and pull the slide to the centre of the strap. Step 2: Insert the remaining edge of the strap into the loop. If not too long, secure the Velcro around the loop and at the slide. Step 3: Insert the Velcro edge of the strap around the centre bar of the slide and secure. Step 4: Fasten the brass button and split hook on the pouch. Then adjust the haversack by pulling the slide up and down.",
         "applies_to": ["seniors", "haversack"]
     },
     {
@@ -650,8 +670,13 @@
         "applies_to": ["seniors", "haversack"]
     },
     {
-        "topic": "Senior Awards - Right Arm - Order",
-        "content": "Target Badge on top row first, followed by Proficiency badges in alphabetical order, 5 per row. Final row (if <5) centred.",
+        "topic": "Senior Awards - Target Badge Placement",
+        "content": "The Target Badge is a Senior section award worn on the RIGHT arm.",
+        "applies_to": ["seniors", "badge"]
+    },
+    {
+        "topic": "Senior Awards - Right Arm Order",
+        "content": "Target Badge goes on the top row first, followed by Proficiency badges in alphabetical order (5 per row). If the final row has less than 5 badges, they are centred.",
         "applies_to": ["seniors", "badge"]
     },
     {
@@ -661,7 +686,7 @@
     },
     {
         "topic": "Senior Awards - Left Arm - Founder's Badge",
-        "content": "Founder's Badge worn centred below the Shoulder Flash.",
+        "content": "Founder's Badge is worn on the LEFT arm, centred below the Shoulder Flash.",
         "applies_to": ["seniors", "badge"]
     },
     {
@@ -781,12 +806,22 @@
     },
     {
         "topic": "Junior Wristband - Placement",
-        "content": "Worn around the right hand.",
+        "content": "The Junior wristband is worn around the right hand, with logos pointed outward.",
         "applies_to": ["junior leaders"]
     },
     {
-        "topic": "Junior Lanyard - Who Wears",
-        "content": "Chief, Leading, and Assistant Leading Boy/Girl wear a single rope lanyard (red, blue, or white) in Day Dress.",
+        "topic": "Junior Lanyard - Chief Leading Boy/Girl",
+        "content": "Chief Leading Boy/Girl wear a RED single rope lanyard in Day Dress.",
+        "applies_to": ["junior leaders", "day", "lanyard"]
+    },
+    {
+        "topic": "Junior Lanyard - Assistant Leading Boy/Girl",
+        "content": "Assistant Leading Boy/Girl wear a BLUE single rope lanyard in Day Dress.",
+        "applies_to": ["junior leaders", "day", "lanyard"]
+    },
+    {
+        "topic": "Junior Lanyard - Leading Boy/Girl",
+        "content": "Leading Boy/Girl wear a WHITE single rope lanyardn Day Dress.",
         "applies_to": ["junior leaders", "day", "lanyard"]
     },
     {

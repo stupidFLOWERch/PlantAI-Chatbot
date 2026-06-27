@@ -3,9 +3,7 @@ import json
 
 client = chromadb.PersistentClient(path="./chroma_db")
 
-# -------------------------
 # Reset DB
-# -------------------------
 try:
     client.delete_collection("uniform_manual")
 except:
@@ -13,52 +11,43 @@ except:
 
 collection = client.get_or_create_collection("uniform_manual")
 
-# -------------------------
-# Build embedding text
-# -------------------------
 def build_embedding(chunk):
     """
     构建用于 embedding 的文本。
-    把关键信息都放进去，让向量检索更精准。
+    用自然语言格式，让向量检索更精准。
     """
     topic = chunk.get("topic", "")
     content = chunk.get("content", "")
     applies_to = chunk.get("applies_to", [])
     
-    # 把 applies_to 变成可读字符串，辅助语义
-    applies_str = ", ".join(applies_to) if applies_to else ""
+    # 把 applies_to 展开成自然语言
+    if applies_to:
+        # 如果是列表，用 "and" 连接
+        applies_str = " and ".join(applies_to)
+    else:
+        applies_str = "all members"
     
+    # 自然语言格式
     parts = [
-        f"Topic: {topic}",
-        f"Applies to: {applies_str}",
+        f"This document is about {topic}.",
+        f"It applies to {applies_str}.",
         f"Content: {content}"
     ]
     
-    return "\n".join(parts)
+    return " ".join(parts)
 
-# -------------------------
 # Load JSON
-# -------------------------
 with open("uniform_manual.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
-# -------------------------
 # Insert into ChromaDB
-# -------------------------
 for idx, chunk in enumerate(data):
-    
-    # 构建 embedding 文本
     embedding_text = build_embedding(chunk)
     
-    # 提取 metadata
     metadata = {
         "topic": chunk.get("topic", ""),
-        "applies_to": chunk.get("applies_to", []),  # ChromaDB 支持 array
+        "applies_to": chunk.get("applies_to", [])
     }
-    
-    # 可选：如果有 dress_code，也加进去方便过滤
-    # 但你的当前 chunk 里已经把 dress_code 合并到 applies_to 了
-    # 例如 ["officers", "ceremonial"]，所以不需要额外字段
     
     collection.add(
         documents=[embedding_text],
