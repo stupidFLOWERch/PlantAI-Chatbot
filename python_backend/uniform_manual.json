@@ -1,0 +1,887 @@
+[
+    {
+        "topic": "Personal Appearance - General Standard",
+        "content": "Members and Officers shall maintain their personal appearance that displays the discipline and professional conduct expected in the Boys' Brigade.",
+        "applies_to": ["members", "officers"]
+    },
+    {
+        "topic": "Personal Appearance - Body Ornaments Prohibited",
+        "content": "No form of body ornaments or accessories (earrings, nose rings, rings other than wedding bands, bracelets, anklets, toe rings) are to be worn in uniform.",
+        "applies_to": ["members", "officers"]
+    },
+    {
+        "topic": "Personal Appearance - Ear Sticks for Girls",
+        "content": "Clear plastic ear sticks or studs may be used by girls only to keep piercings open while in uniform.",
+        "applies_to": ["girls"]
+    },
+    {
+        "topic": "Personal Appearance - Nail Care",
+        "content": "Nails (fingers and toes) must be kept short and clean. No nail accessories (polish, color, coating) are allowed on Parade.",
+        "applies_to": ["members", "officers"]
+    },
+    {
+        "topic": "Personal Appearance - Hairstyle Requirements",
+        "content": "Hairstyles must be clean, conservative, practical, and must not prevent proper wearing of Brigade Headgear (Field Service Cap or Glengarry).",
+        "applies_to": ["members", "officers"]
+    },
+    {
+        "topic": "Personal Appearance - School Hair Regulations",
+        "content": "Members shall wear their hair in accordance with their school regulations (e.g. SJKC). If the school offers variety, Members shall adhere to these regulations.",
+        "applies_to": ["members"]
+    },
+    {
+        "topic": "Personal Appearance - Hair Dyeing Prohibited for Members",
+        "content": "Members are prohibited from dyeing their hair.",
+        "applies_to": ["members"]
+    },
+    {
+        "topic": "Personal Appearance - Hair Dye for Officers",
+        "content": "Officers: No hair dye of striking colours is allowed. Only natural shades similar to their ethnicity are permitted. Officers shall lead by example.",
+        "applies_to": ["officers"]
+    },
+    {
+        "topic": "Personal Appearance - Prohibited Hairstyles",
+        "content": "Wigs, extensions, cornrows, and dreadlocks are strictly prohibited. Skinhead is prohibited unless for cranial medical treatment or religious requirements.",
+        "applies_to": ["members", "officers"]
+    },
+    {
+        "topic": "Personal Appearance - Special Permissions",
+        "content": "Members and Officers may acquire special exceptions from their Company Captain for certain seasons, performances, or religious adherence (e.g. long nails for instruments, long hair for ballet recital).",
+        "applies_to": ["members", "officers"]
+    },
+    {
+        "topic": "Hair - Boys - Clean and Neat",
+        "content": "Hair must be kept clean and neat.",
+        "applies_to": ["boys"]
+    },
+    {
+        "topic": "Hair - Boys - Forehead",
+        "content": "No hair should lie on the forehead.",
+        "applies_to": ["boys"]
+    },
+    {
+        "topic": "Hair - Boys - Collar",
+        "content": "Hair at the back must not touch the collar.",
+        "applies_to": ["boys"]
+    },
+    {
+        "topic": "Hair - Boys - Sideburns",
+        "content": "Sideburns must be clean shaven and no longer than beyond the tragus (ear hole).",
+        "applies_to": ["boys"]
+    },
+    {
+        "topic": "Hair - Boys - Facial Hair",
+        "content": "No facial hair is allowed unless growing out for a performance or religious adherence.",
+        "applies_to": ["boys"]
+    },
+    {
+        "topic": "Hair - Male Officers - Clean and Neat",
+        "content": "Hair must be kept clean and neat.",
+        "applies_to": ["male officers"]
+    },
+    {
+        "topic": "Hair - Male Officers - Forehead",
+        "content": "No hair should hang in front of the forehead.",
+        "applies_to": ["male officers"]
+    },
+    {
+        "topic": "Hair - Male Officers - Collar",
+        "content": "Hair at the back must not touch the collar.",
+        "applies_to": ["male officers"]
+    },
+    {
+        "topic": "Hair - Male Officers - Sideburns",
+        "content": "Sideburns must be clean-shaven and no longer than beyond the tragus (ear hole).",
+        "applies_to": ["male officers"]
+    },
+    {
+        "topic": "Hair - Male Officers - Beard",
+        "content": "No beard is allowed unless growing out for a performance or religious adherence.",
+        "applies_to": ["male officers"]
+    },
+    {
+        "topic": "Hair - Male Officers - Moustache",
+        "content": "Moustaches are permitted if kept short, trimmed, above and not wider than the upper lip. No goatee or soul patch.",
+        "applies_to": ["male officers"]
+    },
+    {
+        "topic": "Hair - Girls - Clean and Neat",
+        "content": "Hair must be kept clean and neat.",
+        "applies_to": ["girls"]
+    },
+    {
+        "topic": "Hair - Girls - Forehead",
+        "content": "No hair should hang in front of the forehead.",
+        "applies_to": ["girls"]
+    },
+    {
+        "topic": "Hair - Girls - Ponytail/Braid",
+        "content": "Hair at the back shall be tied into a single ponytail or braid so it does not hang freely around the neck and shoulders.",
+        "applies_to": ["girls"]
+    },
+    {
+        "topic": "Hair - Girls - Sideburns",
+        "content": "Sideburns shall be no longer than 5cm from the earlobe.",
+        "applies_to": ["girls"]
+    },
+    {
+        "topic": "Hair - Girls - Hair Accessories",
+        "content": "Girls shall use black hairpins and clips only for keeping hair neat and tidy, not for decoration.",
+        "applies_to": ["girls"]
+    },
+    {
+        "topic": "Hair - Female Officers - Forehead",
+        "content": "No hair should lie on the forehead.",
+        "applies_to": ["female officers"]
+    },
+    {
+        "topic": "Hair - Female Officers - Ponytail/Braid",
+        "content": "Female Officer's hair at the back shall be tied into a single ponytail or braid so it does not hang freely around the neck and shoulders.",
+        "applies_to": ["female officers"]
+    },
+    {
+        "topic": "Hair - Female Officers - Sideburns",
+        "content": "Sideburns shall be no longer than 5cm from the earlobe.",
+        "applies_to": ["female officers"]
+    },
+    {
+        "topic": "Hair - Female Officers - Hair Accessories",
+        "content": "Female Officers shall use black hairpins and clips only for keeping hair neat and tidy, not for decoration.",
+        "applies_to": ["female officers"]
+    },
+    {
+        "topic": "Officer - Ceremonial Dress - Blazer",
+        "content": "The blazer is worn over the Officer's Shirt or a plain white long-sleeved shirt with sleeves down and fully buttoned. Collar badges are fastened to the upper lapel and worn perpendicularly. All buttons are navy blue.",
+        "applies_to": ["officers", "ceremonial"]
+    },
+    {
+        "topic": "Officer - Ceremonial Dress - Name Tag Placement",
+        "content": "The name tag is worn above the right breast pocket on the blazer.",
+        "applies_to": ["officers", "ceremonial", "name tag"]
+    },
+    {
+        "topic": "Officer - Ceremonial Dress - Female Blazer",
+        "content": "The design of a female Officer's blazer is similar but fitted for a lady.",
+        "applies_to": ["female officers", "ceremonial"]
+    },
+    {
+        "topic": "Officer - Ceremonial Dress - Male Trousers",
+        "content": "Male Officers wear trousers similar to those worn with Day Dress.",
+        "applies_to": ["male officers", "ceremonial", "trousers"]
+    },
+    {
+        "topic": "Officer - Ceremonial Dress - Female Skirt",
+        "content": "Female Officers wear a Ceremonial Skirt. It is plain-design, knee-length, navy blue, 'A' line cut, with two side pockets and a maximum of two stitched cuts. Strictly for Ceremonial Dress only.",
+        "applies_to": ["female officers", "ceremonial"]
+    },
+    {
+        "topic": "Officer Shirt - General Design",
+        "content": "White with Military Cutting. White buttons. Two epaulettes. Selvage strip. Two breast pockets with buttoned flaps. No pleats on back. Design identical for men and women.",
+        "applies_to": ["officers"]
+    },
+    {
+        "topic": "Officer Shirt - Collar Width",
+        "content": "The collar width shall be 2 inches.",
+        "applies_to": ["officers"]
+    },
+    {
+        "topic": "Officer Shirt - Selvage Strip Width",
+        "content": "The selvage strip width is 1 1/4 inches. All buttons are white.",
+        "applies_to": ["officers"]
+    },
+    {
+        "topic": "Officer Shirt - Epaulette",
+        "content": "All epaulette buttons are white. Epaulette length varies according to shoulder breadth.",
+        "applies_to": ["officers"]
+    },
+    {
+        "topic": "Officer Shirt - Shoulder Flash",
+        "content": "The shoulder flash with 'BRIGED PUTERA MALAYSIA' is sewn on both sleeves, 3/4' from the epaulette and centred with it.",
+        "applies_to": ["officers"]
+    },
+    {
+        "topic": "Officer Shirt - Sleeve Options",
+        "content": "The Officer's shirt may be short-sleeved (just above elbows) or long-sleeved.",
+        "applies_to": ["officers"]
+    },
+    {
+        "topic": "Officer Shirt - Formal Dress",
+        "content": "For Formal Dress, Officers wear the Officer's Shirt with necktie and tie clip.",
+        "applies_to": ["officers", "formal"]
+    },
+    {
+        "topic": "Officer Shirt - Day Dress",
+        "content": "For Day Dress, Officers wear the Officer's Shirt with collar unbuttoned and no tie. If long-sleeved, sleeves must be rolled up above the elbow with a 2-inch fold.",
+        "applies_to": ["officers", "day"]
+    },
+    {
+        "topic": "Officer Shirt - Ceremonial Dress Alternative",
+        "content": "If not wearing the Officer's shirt, only plain white long-sleeved shirts may be worn with Ceremonial Dress.",
+        "applies_to": ["officers", "ceremonial"]
+    },
+    {
+        "topic": "Officer T-Shirt - Default",
+        "content": "The Brigade T-Shirt designed by National HQ is the default for Drill Kit and PT Kit.",
+        "applies_to": ["officers", "drill", "pt"]
+    },
+    {
+        "topic": "Officer T-Shirt - Alternative Designs",
+        "content": "Company, District, Region, State, or Event T-Shirts may be worn in place of the Brigade T-Shirt for Drill Kit or PT Kit, but only during the event or within the Council's jurisdiction.",
+        "applies_to": ["officers", "drill", "pt"]
+    },
+    {
+        "topic": "Officer Glengarry - Who Wears It",
+        "content": "The Glengarry is worn by Officers and Warrant Officers only.",
+        "applies_to": ["officers", "warrant officers"]
+    },
+    {
+        "topic": "Officer Glengarry - Positioning",
+        "content": "Tilted slightly right, approximately one inch above the right ear and two fingers' breadth above the right eyebrow.",
+        "applies_to": ["officers", "warrant officers"]
+    },
+    {
+        "topic": "Officer Glengarry - Badge and Rosette",
+        "content": "The Glengarry Badge is worn on top of the Rosette on the left side. Hair must be concealed from the forehead.",
+        "applies_to": ["officers", "warrant officers"]
+    },
+    {
+        "topic": "Officer - Name Tag - Design",
+        "content": "White letters on a black plastic background, 75mm x 25mm.",
+        "applies_to": ["officers", "name tag"]
+    },
+    {
+        "topic": "Officer - Name Tag - Name Format",
+        "content": "Full Name (THAM CHWEN FONG) or first name only if full name >15 characters (RAVINDRAN instead of RAVINDRAN A/L ARUMUGAM). Christian/first name precedes initials and surname.",
+        "applies_to": ["officers", "name tag"]
+    },
+    {
+        "topic": "Officer - Name Tag - Placement",
+        "content": "Worn just above the right breast pocket for Day and Formal Dress. On the right breast above pocket level for Ceremonial Dress. On the right breast area of the T-shirt for Drill Kit and PT Kit.",
+        "applies_to": ["officers", "name tag"]
+    },
+    {
+        "topic": "Officer - Name Tag - BBHQ Staff",
+        "content": "BBHQ Staff: Black letters (name and position) with BB Logo on a silver background layered with epoxy, 75mm x 25mm.",
+        "applies_to": ["bbhq staff", "name tag"]
+    },
+    {
+        "topic": "Officer - Lanyard - Wearing",
+        "content": "Worn over the left shoulder with loop under the left epaulette. End fastened to the side of the left breast pocket.",
+        "applies_to": ["officers", "lanyard"]
+    },
+    {
+        "topic": "Officer - Lanyard - Length",
+        "content": "Should not dangle more than 1' breadth below the breast pocket.",
+        "applies_to": ["officers", "lanyard"]
+    },
+    {
+        "topic": "Officer - Lanyard - Whistle",
+        "content": "A standard whistle (straight for 9-figure) is fastened to the end.",
+        "applies_to": ["officers", "lanyard"]
+    },
+    {
+        "topic": "Officer - Necktie - Design",
+        "content": "Plain navy blue with no design.",
+        "applies_to": ["officers"]
+    },
+    {
+        "topic": "Officer - Necktie - When Worn",
+        "content": "Worn only with Ceremonial or Formal Dress.",
+        "applies_to": ["officers", "ceremonial", "formal", "tie"]
+    },
+    {
+        "topic": "Officer - Necktie - Length",
+        "content": "The tip of the tie must not cover the belt buckle.",
+        "applies_to": ["officers", "tie"]
+    },
+    {
+        "topic": "Officer - Tie Clip",
+        "content": "A standard BB Tie Clip must be fastened to the tie.",
+        "applies_to": ["officers", "tie"]
+    },
+    {
+        "topic": "Officer - Trousers - Male",
+        "content": "Plain navy blue with two side pockets and one back pocket with no flap. Straight cut without pleats.",
+        "applies_to": ["male officers", "trousers"]
+    },
+    {
+        "topic": "Officer - Trousers - Female",
+        "content": "Same design as male but fitted for a lady. May be worn for Day and Formal Dress only. Female Officers wear Ceremonial Skirt for Ceremonial Dress.",
+        "applies_to": ["female officers", "day", "formal", "trousers"]
+    },
+    {
+        "topic": "Officer - Belt",
+        "content": "Black nylon canvas snake grip belt with aluminium/steel buckle embossed with the BB Logo.",
+        "applies_to": ["officers", "belt"]
+    },
+    {
+        "topic": "Officer - Footwear - Socks",
+        "content": "Navy blue socks of plain design.",
+        "applies_to": ["officers", "footwear"]
+    },
+    {
+        "topic": "Officer - Footwear - Male",
+        "content": "Plain black leather shoes or boots with laces.",
+        "applies_to": ["male officers", "footwear"]
+    },
+    {
+        "topic": "Officer - Footwear - Female",
+        "content": "Plain black court shoes with maximum 2' heels.",
+        "applies_to": ["female officers", "footwear"]
+    },
+    {
+        "topic": "Officer - Medals - Placement",
+        "content": "Worn below the top flap of the left breast pocket on the Blazer.",
+        "applies_to": ["officers", "ceremonial"]
+    },
+    {
+        "topic": "Officer - Medals - Highest Medal Only",
+        "content": "Only the highest Brigade Service Medal achieved by the Officer shall be worn.",
+        "applies_to": ["officers"]
+    },
+    {
+        "topic": "Officer - Medals - Sequence",
+        "content": "Highest officer medal on the rightmost side, other non-BB medals in descending order towards the left. If only one medal, fastened squarely at the centre of the left breast pocket.",
+        "applies_to": ["officers"]
+    },
+    {
+        "topic": "Officer - Service Bar",
+        "content": "Worn just above the left breast pocket for Day Dress or Formal Dress.",
+        "applies_to": ["officers", "day", "formal"]
+    },
+    {
+        "topic": "Officer Rank - Lanyard Colour - Dark Blue",
+        "content": "Dark Blue: Warrant Officers, BBHQ Officer, BBHQ Assistant Officer.",
+        "applies_to": ["warrant officers", "bbhq officers", "lanyard"]
+    },
+    {
+        "topic": "Officer Rank - Lanyard Colour - Green",
+        "content": "Green: Teacher Advisor.",
+        "applies_to": ["teacher advisors", "lanyard"]
+    },
+    {
+        "topic": "Officer Rank - Lanyard Colour - Black",
+        "content": "Black: Lieutenant, BBHQ Assistant Executive Secretary, BBHQ Senior Executive, BBHQ Executive.",
+        "applies_to": ["lieutenants", "bbhq executives", "lanyard"]
+    },
+    {
+        "topic": "Officer Rank - Lanyard Colour - Red",
+        "content": "Red: Captain, BBHQ Executive Secretary.",
+        "applies_to": ["captains", "bbhq executive secretary", "lanyard"]
+    },
+    {
+        "topic": "Officer Rank - Lanyard Colour - Orange",
+        "content": "Orange: Honorary Captain.",
+        "applies_to": ["honorary captains", "lanyard"]
+    },
+    {
+        "topic": "Officer Rank - Lanyard Colour - Purple",
+        "content": "Purple: Chaplain.",
+        "applies_to": ["chaplains", "lanyard"]
+    },
+    {
+        "topic": "Officer Rank - Glengarry Rosette Colour - Black",
+        "content": "Black Rosette: Warrant Officer, Teacher Advisor, Lieutenant, BBHQ Assistant Executive Secretary, BBHQ Senior Executive, BBHQ Executive.",
+        "applies_to": ["warrant officers", "teacher advisors", "lieutenants", "bbhq staff"]
+    },
+    {
+        "topic": "Officer Rank - Glengarry Rosette Colour - Red",
+        "content": "Red Rosette: Captain, BBHQ Executive Secretary.",
+        "applies_to": ["captains", "bbhq executive secretary"]
+    },
+    {
+        "topic": "Officer Rank - Glengarry Rosette Colour - Orange",
+        "content": "Orange Rosette: Honorary Captain.",
+        "applies_to": ["honorary captains"]
+    },
+    {
+        "topic": "Officer Rank - Glengarry Rosette Colour - Purple",
+        "content": "Purple Rosette: Chaplain.",
+        "applies_to": ["chaplains"]
+    },
+    {
+        "topic": "Officer - OTP Badge - When Worn",
+        "content": "The OTP Badge can be worn on Day Dress, Formal Dress, and Ceremonial Uniform.",
+        "applies_to": ["officers"]
+    },
+    {
+        "topic": "Officer - OTP Badge - Placement",
+        "content": "Worn above the name tag with no gap between the OTP badge and the name tag.",
+        "applies_to": ["officers", "badge"]
+    },
+    {
+        "topic": "Officer - OTP Badge - Highest Level Only",
+        "content": "Only the highest level achieved OTP Badge shall be worn at any given time.",
+        "applies_to": ["officers"]
+    },
+    {
+        "topic": "Teacher Advisor Uniform - Overview",
+        "content": "Officers' Glengarry with Warrant Officers' cap badge. White Officer's shirt (short or long). Warrant Officers' collar badges. Name tag (white on black). Green Lanyard.",
+        "applies_to": ["teacher advisors"]
+    },
+    {
+        "topic": "Teacher Advisor Uniform - Trousers",
+        "content": "Plain navy-blue long trousers with two side pockets and one back pocket with no flap. Straight cut without pleats.",
+        "applies_to": ["teacher advisors", "trousers"]
+    },
+    {
+        "topic": "Teacher Advisor Uniform - Belt and Tie",
+        "content": "Officers' Belt. Dark blue tie and tie-clip for Formal Dress only.",
+        "applies_to": ["teacher advisors", "belt", "tie"]
+    },
+    {
+        "topic": "Teacher Advisor Uniform - Footwear",
+        "content": "Men: Navy or Dark Blue socks, plain black leather shoes or boots with laces. Women: Plain black court shoes with max 2' heels.",
+        "applies_to": ["teacher advisors", "footwear"]
+    },
+    {
+        "topic": "Teacher Advisor Uniform - No Ceremonial or Drill Kit",
+        "content": "There is no Ceremonial Dress or Drill Kit for Teacher Advisor.",
+        "applies_to": ["teacher advisors"]
+    },
+    {
+        "topic": "Primer Uniform - Shirt and Dress Codes",
+        "content": "Long-sleeved Officer's shirt. Ceremonial: with necktie and tie clip, sleeves down. Day: sleeves rolled above elbow, 2-inch fold.",
+        "applies_to": ["primers"]
+    },
+    {
+        "topic": "Primer Uniform - Components",
+        "content": "Field Service Cap, Senior Section Cap Badge, Primer's Epaulette, Senior's Name Tag, Officer's Necktie and Tie Clip, Officer's Trousers, Officer's Belt, Officer's Footwear, Senior Section Brigade T-Shirt.",
+        "applies_to": ["primers", "cap"]
+    },
+    {
+        "topic": "Primer Uniform - PT Kit",
+        "content": "PT Kit: Training Shorts/Track Pants and Sports shoes.",
+        "applies_to": ["primers", "pt"]
+    },
+    {
+        "topic": "Primer Awards - When Worn",
+        "content": "Awards are worn only in Ceremonial Dress or Day Dress. Not worn in Drill Kit or PT Kit.",
+        "applies_to": ["primers", "ceremonial", "day"]
+    },
+    {
+        "topic": "Primer Awards - Member's Recognition Award",
+        "content": "Worn on the left side, above the name tag.",
+        "applies_to": ["primers", "name tag"]
+    },
+    {
+        "topic": "Primer Awards - Robert Davis Award",
+        "content": "Worn on the left arm, centred below the shoulder flash.",
+        "applies_to": ["primers"]
+    },
+    {
+        "topic": "Primer Awards - Founder's/President's Award",
+        "content": "Primer wears only either the Founder's Award or President Award (whichever higher attained in Senior Section).",
+        "applies_to": ["primers"]
+    },
+    {
+        "topic": "Primer Awards - Multiple Awards",
+        "content": "If a Primer with Founder's/President's Badge also gains the Robert Davis Award, both are worn on equal level below the shoulder flash, with Robert Davis on the left.",
+        "applies_to": ["primers", "badge"]
+    },
+    {
+        "topic": "Senior Shirt - Design",
+        "content": "Navy Blue with Military Cutting. Navy Blue buttons. Selvage strip. Two breast pockets with buttoned flaps. Two epaulettes. No pleats on back. Design identical for Boys and Girls.",
+        "applies_to": ["seniors"]
+    },
+    {
+        "topic": "Senior Shirt - Collar and Selvage",
+        "content": "Collar width: 2 inches. Selvage strip: 1 1/4 inches. All buttons are navy blue.",
+        "applies_to": ["seniors"]
+    },
+    {
+        "topic": "Senior Shirt - Epaulette",
+        "content": "All epaulette buttons are navy blue. Length varies according to shoulder breadth.",
+        "applies_to": ["seniors"]
+    },
+    {
+        "topic": "Senior Shirt - Shoulder Flash",
+        "content": "The shoulder flash with 'BRIGED PUTERA MALAYSIA' is sewn on both sleeves, 3/4' from the epaulette and centred with it.",
+        "applies_to": ["seniors"]
+    },
+    {
+        "topic": "Senior Shirt - Ceremonial Dress",
+        "content": "Ceremonial: long-sleeved with sky blue tie tucked under the haversack. Sleeves down and fully buttoned.",
+        "applies_to": ["seniors", "ceremonial"]
+    },
+    {
+        "topic": "Senior Shirt - Day Dress",
+        "content": "Day: long-sleeved with sleeves rolled up above the elbow. The folding shall be 2 inches in width.",
+        "applies_to": ["seniors", "day"]
+    },
+    {
+        "topic": "Senior T-Shirt - Default",
+        "content": "The Brigade T-Shirt from BB Shop is the default for Drill Kit and PT Kit.",
+        "applies_to": ["seniors", "drill", "pt"]
+    },
+    {
+        "topic": "Senior T-Shirt - Alternative Designs",
+        "content": "Company, District, Region, State, or Event T-Shirts may be worn in place for Drill Kit or PT Kit during the event or within Council jurisdiction.",
+        "applies_to": ["seniors", "drill", "pt"]
+    },
+    {
+        "topic": "Senior Field Service Cap - Positioning",
+        "content": "Tilted slightly right, two fingers from right ear, two fingers from right eyebrow. Hair concealed from forehead.",
+        "applies_to": ["seniors", "cap"]
+    },
+    {
+        "topic": "Senior Cap Badge",
+        "content": "The circular background of 'BB' is Blue.",
+        "applies_to": ["seniors", "cap"]
+    },
+    {
+        "topic": "Senior Name Tag - Placement",
+        "content": "Worn on the left side, just above the breast pocket.",
+        "applies_to": ["seniors", "name tag"]
+    },
+    {
+        "topic": "Senior Name Tag - Male",
+        "content": "Male: black letters on white plastic background, 70mm x 20mm, with Member's name and Company name.",
+        "applies_to": ["senior boys", "name tag"]
+    },
+    {
+        "topic": "Senior Name Tag - Female",
+        "content": "Female: white letters on sky-blue plastic background, 70mm x 20mm, with Member's name and Company name.",
+        "applies_to": ["senior girls", "name tag"]
+    },
+    {
+        "topic": "Senior Name Tag - Name Format",
+        "content": "Full Name or first name only if >15 characters. Christian/first name precedes initials and surname.",
+        "applies_to": ["seniors", "name tag"]
+    },
+    {
+        "topic": "Senior NCO Lanyard - Who Wears",
+        "content": "White lanyard worn by NCOs and Staff Sergeants in Ceremonial Dress or Day Dress.",
+        "applies_to": ["senior ncos", "staff sergeants", "ceremonial", "day", "lanyard"]
+    },
+    {
+        "topic": "Senior NCO Lanyard - Wearing",
+        "content": "Over left shoulder, loop under left epaulette, fastened to left breast pocket side. Not more than 1' below pocket.",
+        "applies_to": ["senior ncos", "staff sergeants", "lanyard"]
+    },
+    {
+        "topic": "Senior NCO Lanyard - Whistle",
+        "content": "Standard whistle (straight for 9-figure) fastened to the end.",
+        "applies_to": ["senior ncos", "staff sergeants", "lanyard"]
+    },
+    {
+        "topic": "Senior Necktie - Design",
+        "content": "Sky blue plain design.",
+        "applies_to": ["seniors", "tie"]
+    },
+    {
+        "topic": "Senior Necktie - When Worn",
+        "content": "Worn only in Ceremonial Dress, between the shirt and haversack. No BB Tie Clip.",
+        "applies_to": ["seniors", "ceremonial", "tie"]
+    },
+    {
+        "topic": "Senior Necktie - Length",
+        "content": "The tip of the tie must not cover the belt buckle.",
+        "applies_to": ["seniors", "tie"]
+    },
+    {
+        "topic": "Senior Trousers - Boys",
+        "content": "Navy blue with two side pockets and one back pocket with no flap. Straight cut without pleats.",
+        "applies_to": ["senior boys", "trousers"]
+    },
+    {
+        "topic": "Senior Trousers - Girls",
+        "content": "Same as boys' but may have a maximum of 2 stitched cuts (non-pleated) in the front and back to suit the shape.",
+        "applies_to": ["senior girls", "trousers"]
+    },
+    {
+        "topic": "Senior Belt - Design",
+        "content": "Brown or black leather belt with 2 runners and a brass buckle embossed with BB logo.",
+        "applies_to": ["seniors", "belt"]
+    },
+    {
+        "topic": "Senior Belt - Wearing",
+        "content": "Worn tightly around the waist with buckle in the centre and the two runners placed as far apart as possible.",
+        "applies_to": ["seniors", "belt"]
+    },
+    {
+        "topic": "Senior Haversack - Wearing",
+        "content": "White haversack worn tightly over the right shoulder under the right epaulette, passing under the belt on the left side. Pouch rests on the left hip.",
+        "applies_to": ["seniors", "haversack"]
+    },
+    {
+        "topic": "Senior Haversack - Brass Button",
+        "content": "A brass button is fastened to the pouch.",
+        "applies_to": ["seniors", "haversack"]
+    },
+    {
+        "topic": "Senior Footwear - Socks",
+        "content": "Navy blue socks of plain design.",
+        "applies_to": ["seniors", "footwear"]
+    },
+    {
+        "topic": "Senior Footwear - Shoes",
+        "content": "Plain black leather shoes or boots with laces. Same for Boys and Girls.",
+        "applies_to": ["seniors", "footwear"]
+    },
+    {
+        "topic": "Senior Haversack Assembly - Parts",
+        "content": "Metal parts: Loop, Slide, Brass Button, Split Hook.",
+        "applies_to": ["seniors", "haversack"]
+    },
+    {
+        "topic": "Senior Haversack Assembly - Method 1",
+        "content": "Insert the longer strap into the slide and pull the slide to the centre of the strap.",
+        "applies_to": ["seniors", "haversack"]
+    },
+    {
+        "topic": "Senior Haversack Assembly - Method 2",
+        "content": "Insert the remaining edge of the strap into the loop. If not too long, secure the Velcro around the loop and at the slide.",
+        "applies_to": ["seniors", "haversack"]
+    },
+    {
+        "topic": "Senior Haversack Assembly - Method 3",
+        "content": "Insert the Velcro edge of the strap around the centre bar of the slide and secure.",
+        "applies_to": ["seniors", "haversack"]
+    },
+    {
+        "topic": "Senior Haversack Assembly - Method 4",
+        "content": "Fasten the brass button and split hook on the pouch.",
+        "applies_to": ["seniors", "haversack"]
+    },
+    {
+        "topic": "Senior Haversack Assembly - Adjustment",
+        "content": "Adjust the haversack by pulling the slide up and down.",
+        "applies_to": ["seniors", "haversack"]
+    },
+    {
+        "topic": "Senior Awards - Right Arm - Order",
+        "content": "Target Badge on top row first, followed by Proficiency badges in alphabetical order, 5 per row. Final row (if <5) centred.",
+        "applies_to": ["seniors", "badge"]
+    },
+    {
+        "topic": "Senior Awards - Right Arm - Armlet vs Chevron",
+        "content": "Proficiency badges and Target badge worn on an armlet. NCOs wear on their Chevrons.",
+        "applies_to": ["seniors", "badge"]
+    },
+    {
+        "topic": "Senior Awards - Left Arm - Founder's Badge",
+        "content": "Founder's Badge worn centred below the Shoulder Flash.",
+        "applies_to": ["seniors", "badge"]
+    },
+    {
+        "topic": "Senior Awards - Left Arm - Second Row",
+        "content": "Second row: President's Badge (left), Duke of Edinburgh Award (centre), Junior Gold Award (right).",
+        "applies_to": ["seniors", "badge"]
+    },
+    {
+        "topic": "Senior Awards - Left Arm - Scholastic Badges",
+        "content": "Scholastic Badges in a row below President's Badge: Gold Scholastics Badge on the leftmost, descending order.",
+        "applies_to": ["seniors", "badge"]
+    },
+    {
+        "topic": "Senior Awards - Left Arm - NCO and Service Badges",
+        "content": "NCO Proficiency Star in the middle, Long Years' Service (left) and Three-Year Service (right) flanking it.",
+        "applies_to": ["seniors", "badge"]
+    },
+    {
+        "topic": "Senior Awards - Left Arm - Service Badges",
+        "content": "Junior Service Badge on the leftmost of the row below, with One Year Service badges in a row continuously.",
+        "applies_to": ["seniors", "badge"]
+    },
+    {
+        "topic": "Senior Awards - Link Badge",
+        "content": "The Link Badge, awarded to Juniors who passed the prescribed test and transferred to Senior Section, is worn just above the name tag.",
+        "applies_to": ["seniors", "badge"]
+    },
+    {
+        "topic": "Senior Girls Skirt - Availability",
+        "content": "Available for Companies required to comply with school, church, or institution dress codes. Applied to ALL Senior Girls in the Company.",
+        "applies_to": ["senior girls", "companies"]
+    },
+    {
+        "topic": "Senior Girls Skirt - Design",
+        "content": "Plain-design, knee-length, navy blue, 'A' line cut, two side pockets, maximum 2 stitched cuts, fitted from natural waistline.",
+        "applies_to": ["senior girls"]
+    },
+    {
+        "topic": "Senior Girls Skirt - Belt Loops",
+        "content": "Belt loops: 2 1/2 inch tall, 1/2 inch wide to accommodate the Senior's Belt.",
+        "applies_to": ["senior girls", "belt"]
+    },
+    {
+        "topic": "Senior Girls Skirt - Underwear",
+        "content": "Girls shall wear black 1/4 length tights or black 'safety shorts' underneath.",
+        "applies_to": ["senior girls"]
+    },
+    {
+        "topic": "Senior Girls Skirt - Wearing",
+        "content": "Worn on natural waistline. All tops tucked in, displaying waistband and belt loops. Senior Belt worn (polished and clean).",
+        "applies_to": ["senior girls"]
+    },
+    {
+        "topic": "Senior Girls Skirt - Footwear",
+        "content": "Plain calf-length navy blue socks and plain black leather boots/shoes. Socks visible ~1 inch above boot collar and pull loop.",
+        "applies_to": ["senior girls", "footwear"]
+    },
+    {
+        "topic": "Junior Shirt - Design",
+        "content": "Navy Blue with Military Cutting. Navy Blue buttons. Selvage strip. Two breast pockets with buttoned flaps. Two epaulettes. No pleats on back. Design identical for Boys and Girls.",
+        "applies_to": ["juniors"]
+    },
+    {
+        "topic": "Junior Shirt - Collar and Selvage",
+        "content": "Collar width: 2 inches. Selvage strip: 1 1/4 inches. All buttons are navy blue.",
+        "applies_to": ["juniors"]
+    },
+    {
+        "topic": "Junior Shirt - Epaulette",
+        "content": "All epaulette buttons are navy blue. Length varies according to shoulder breadth.",
+        "applies_to": ["juniors"]
+    },
+    {
+        "topic": "Junior Shirt - Sleeves",
+        "content": "No long-sleeves for Junior's Shirt.",
+        "applies_to": ["juniors"]
+    },
+    {
+        "topic": "Junior Shirt - Shoulder Flash",
+        "content": "The shoulder flash with 'BRIGED PUTERA MALAYSIA' is sewn on both sleeves, 3/4'' from the epaulette and centred with it.",
+        "applies_to": ["juniors"]
+    },
+    {
+        "topic": "Junior T-Shirt - Default",
+        "content": "The Brigade T-Shirt from BB Shop is the default for Drill Kit and PT Kit.",
+        "applies_to": ["juniors", "drill", "pt"]
+    },
+    {
+        "topic": "Junior T-Shirt - Alternative Use",
+        "content": "May be worn as an alternative uniform for platoons meeting after school or Companies in interior communities.",
+        "applies_to": ["juniors"]
+    },
+    {
+        "topic": "Junior T-Shirt - Alternative Designs",
+        "content": "Company, District, Region, State, or Event T-Shirts may be worn in place for Drill Kit or PT Kit during the event or within Council jurisdiction.",
+        "applies_to": ["juniors", "drill", "pt"]
+    },
+    {
+        "topic": "Junior Field Service Cap - Positioning",
+        "content": "Tilted slightly right, two fingers from right ear, two fingers from right eyebrow. Hair concealed from forehead.",
+        "applies_to": ["juniors", "cap"]
+    },
+    {
+        "topic": "Junior Cap Badge",
+        "content": "The circular background of 'BB' is Red.",
+        "applies_to": ["juniors", "cap"]
+    },
+    {
+        "topic": "Junior Name Tag",
+        "content": "Same as Senior Section.",
+        "applies_to": ["juniors", "name tag"]
+    },
+    {
+        "topic": "Junior Wristband - Who Wears",
+        "content": "Navy-blue wristband with BB Logo worn by the Chief, Leading, and Assistant Leading Boy/Girl.",
+        "applies_to": ["junior leaders"]
+    },
+    {
+        "topic": "Junior Wristband - Placement",
+        "content": "Worn around the right hand.",
+        "applies_to": ["junior leaders"]
+    },
+    {
+        "topic": "Junior Lanyard - Who Wears",
+        "content": "Chief, Leading, and Assistant Leading Boy/Girl wear a single rope lanyard (red, blue, or white) in Day Dress.",
+        "applies_to": ["junior leaders", "day", "lanyard"]
+    },
+    {
+        "topic": "Junior Lanyard - Wearing",
+        "content": "Over left shoulder, loop under left epaulette, fastened to left breast pocket side. Not more than 1' below pocket.",
+        "applies_to": ["junior leaders", "lanyard"]
+    },
+    {
+        "topic": "Junior Lanyard - Whistle",
+        "content": "Standard whistle (straight or 9-figure) fastened to the end.",
+        "applies_to": ["junior leaders", "lanyard"]
+    },
+    {
+        "topic": "Junior Belt",
+        "content": "One-inch white canvas belt with aluminium/steel buckle embossed with BB logo.",
+        "applies_to": ["juniors", "belt"]
+    },
+    {
+        "topic": "Junior Shorts",
+        "content": "Navy blue shorts with two side pockets and one back pocket.",
+        "applies_to": ["juniors"]
+    },
+    {
+        "topic": "Junior Footwear - Socks",
+        "content": "Knee-length navy blue socks of plain design.",
+        "applies_to": ["juniors", "footwear"]
+    },
+    {
+        "topic": "Junior Footwear - Shoes",
+        "content": "Plain black canvas shoes with laces. Same for Boys and Girls.",
+        "applies_to": ["juniors", "footwear"]
+    },
+    {
+        "topic": "Junior Awards - Left Arm",
+        "content": "Junior Recruitment badge and One-year service are pinned on a Junior Chevron, sewn on the LEFT arm.",
+        "applies_to": ["juniors", "badge"]
+    },
+    {
+        "topic": "Junior Awards - Right Arm",
+        "content": "Junior Section Achievement Awards are pinned on a Junior Chevron, sewn on the RIGHT arm.",
+        "applies_to": ["juniors"]
+    },
+    {
+        "topic": "Pre-Junior T-Shirt - Default",
+        "content": "The Brigade T-Shirt from BB Shop is the default for Pre-Junior's uniform.",
+        "applies_to": ["pre-juniors"]
+    },
+    {
+        "topic": "Pre-Junior T-Shirt - Alternative Designs",
+        "content": "Company, District, Region, State, or Event T-Shirts may be worn in place during the event or within Council jurisdiction.",
+        "applies_to": ["pre-juniors"]
+    },
+    {
+        "topic": "Pre-Junior Field Service Cap - Positioning (Optional)",
+        "content": "Tilted slightly right, one finger from right ear, two fingers from right eyebrow. Hair concealed from forehead.",
+        "applies_to": ["pre-juniors", "cap"]
+    },
+    {
+        "topic": "Pre-Junior Cap Badge",
+        "content": "Same as Junior Section. Circular background of 'BB' is Red.",
+        "applies_to": ["pre-juniors", "cap"]
+    },
+    {
+        "topic": "Pre-Junior Name Tag",
+        "content": "Same as Senior Section.",
+        "applies_to": ["pre-juniors", "name tag"]
+    },
+    {
+        "topic": "Pre-Junior Belt",
+        "content": "One-inch white canvas belt with aluminium/steel buckle embossed with BB logo.",
+        "applies_to": ["pre-juniors", "belt"]
+    },
+    {
+        "topic": "Pre-Junior Shorts",
+        "content": "Navy blue shorts with two side pockets and one back pocket.",
+        "applies_to": ["pre-juniors"]
+    },
+    {
+        "topic": "Pre-Junior Footwear - Socks",
+        "content": "Knee-length navy blue socks of plain design.",
+        "applies_to": ["pre-juniors", "footwear"]
+    },
+    {
+        "topic": "Pre-Junior Footwear - Shoes",
+        "content": "Plain black canvas shoes with laces or Velcro. Same for Boys and Girls.",
+        "applies_to": ["pre-juniors", "footwear"]
+    },
+    {
+        "topic": "Pre-Junior Awards - Placement",
+        "content": "Ironed and sewed on the right sleeve of the T-Shirt.",
+        "applies_to": ["pre-juniors"]
+    },
+    {
+        "topic": "Pre-Junior Awards - Order",
+        "content": "Placed in the order shown in the diagram.",
+        "applies_to": ["pre-juniors"]
+    }
+]
