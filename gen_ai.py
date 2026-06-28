@@ -19,7 +19,6 @@ collection = client.get_collection("uniform_manual")
 reranker = FlagReranker('BAAI/bge-reranker-v2-m3', use_fp16=True)
 history = []
 
-
 # -------------------------
 # Conversation Memory
 # Stores the last 3 user-assistant exchanges.
@@ -40,7 +39,7 @@ def detect_intent(text):
     text = text.lower().strip()
 
     question_words = ["what", "why", "how", "when", "where", "can", "is", "are", "do", "does"]
-    greeting_words = ["hi", "hello", "hey", "good morning", "good afternoon"]
+    greeting_words = ["hi", "hello", "hey", "good morning", "good afternoon", "good night"]
 
     is_greeting = any(re.search(rf"\b{word}\b", text) for word in greeting_words)
     is_question = (
@@ -56,77 +55,43 @@ def detect_intent(text):
 
 
 # -------------------------
-# Detect Uniform Context
+# Follow-up Detection
 # -------------------------
-# def detect_uniform_context(text):
-
-#     # Extract uniform-related labels from the user's query.
-
-#     text = text.lower().strip()
+def is_follow_up(prompt, history):
+    # if no history question, no way is follow up
+    if not history:
+        return False
     
-#     role_keywords = {
-#         "officers": ["officer", "officers"],
-#         "seniors": ["senior", "seniors"],
-#         "juniors": ["junior", "juniors"],
-#         "pre-juniors": ["pre-junior", "pre-juniors"],
-#         "primers": ["primer", "primers"],
-#         "teacher_advisors": ["teacher advisor", "teacher advisors"],
-#         "warrant_officers": ["warrant officer", "warrant officers"],
-#         "captains": ["captain", "captains"],
-#         "chaplains": ["chaplain", "chaplains"],
-#         "boys": ["boys"],
-#         "girls": ["girls"],
-#         "senior_ncos": ["senior nco", "senior ncos", "nco", "ncos"],
-#         "staff_sergeants": ["staff sergeant", "staff sergeants"],
-#         "sergeants": ["sergeant", "sergeants"],
-#     }
+    prompt_lower = prompt.lower().strip()
     
-#     dress_keywords = {
-#         "ceremonial": ["ceremonial", "ceremony"],
-#         "formal": ["formal"],
-#         "day": ["day dress"],
-#         "drill": ["drill kit"],
-#         "pt": ["pt kit"]
-#     }
+    # 1. detect words that always appear in follow up question
+    follow_up_patterns = [
+        r"how about",
+        r"what about",
+        r"^and",
+        r"^also",
+        r"^then",
+        r"^so",
+        r"for .+",
+    ]
     
-#     part_keywords = {
-#         "badge": ["badge", "badges", "award", "awards", "medal", "medals", "chevron"],
-#         "cap": ["glengarry", "field service cap"],
-#         "shirt": ["shirt", "shirts", "blazer"],
-#         "trousers": ["trouser", "trousers", "pants"],
-#         "skirt": ["skirt"],
-#         "belt": ["belt", "belts"],
-#         "haversack": ["haversack", "pouch"],
-#         "footwear": ["shoe", "shoes", "boot", "boots", "sock", "socks"],
-#         "tie": ["tie", "necktie"],
-#         "lanyard": ["lanyard", "whistle"],
-#         "name tag": ["name tag", "nametag"]
-#     }
+    for pattern in follow_up_patterns:
+        if re.search(pattern, prompt_lower, re.IGNORECASE):
+            return True
     
-#     detected = []
+    # 2. if question less than 5 words, assume as follow up question
+    if len(prompt_lower.split()) < 5:
+        return True
     
-#     # detect role
-#     for role, keywords in role_keywords.items():
-#         for kw in keywords:
-#             if kw in text:
-#                 detected.append(role)
-#                 break
+    # get all word with length > 3 in last and current question
+    last_user = history[-1].get("user", "").lower()
+    last_words = set(re.findall(r'\b[a-z]{3,}\b', last_user))
+    current_words = set(re.findall(r'\b[a-z]{3,}\b', prompt_lower))
+    # 3. if current question got same repeated word as last question, assume as follow up
+    if last_words & current_words:
+        return True
     
-#     # detect dress type
-#     for dress, keywords in dress_keywords.items():
-#         for kw in keywords:
-#             if kw in text:
-#                 detected.append(dress)
-#                 break
-    
-#     # detect uniform part
-#     for part, keywords in part_keywords.items():
-#         for kw in keywords:
-#             if kw in text:
-#                 detected.append(part)
-#                 break
-    
-#     return detected
+    return False
 
 
 # Route the request based on detected intent.
@@ -139,37 +104,71 @@ def route(intent):
 
 
 # -------------------------
-# Retrieve Knowledge
+# Retrieve Knowledge (Dual-Query)
 # -------------------------
-def retrieve(prompt):
-
-    # 1. semantic search for 20 results
-    results = collection.query(
-        query_texts=[prompt],
-        n_results=20,
+def retrieve_with_context(current_prompt, history_prompt=None):
+    """
+    双查询检索：
+    1. 用当前问题检索 15 条
+    2. 如果有历史上下文，用历史上下文检索 10 条
+    3. 合并去重后，用 Reranker 精排取 Top 3
+    """
+    all_docs = []
+    all_metadatas = []
+    
+    # 1. semantic search for current user prompt
+    print(f"=== SEARCHING WITH CURRENT: {current_prompt[:50]}... ===")
+    results_current = collection.query(
+        query_texts=[current_prompt],
+        n_results=15,
         include=["documents", "metadatas"]
     )
     
-    docs = results["documents"][0]
-    metadatas = results["metadatas"][0] if results["metadatas"] else []
+    docs_current = results_current["documents"][0]
+    metas_current = results_current["metadatas"][0] if results_current["metadatas"] else []
     
-    print(f"=== RETRIEVED {len(docs)} DOCS (VECTOR) ===")
-    for i, doc in enumerate(docs):
-        meta = metadatas[i] if i < len(metadatas) else {}
-        print(f"  [{i}] {meta.get('topic', 'Unknown')}")
+    print(f"  Current search returned {len(docs_current)} docs")
     
-    # 2. skip reranker if results too few
-    if len(docs) <= 2:
+    # add searched result to all_docs and all_metadatas
+    for i, doc in enumerate(docs_current):
+        if doc not in all_docs:
+            all_docs.append(doc)
+            all_metadatas.append(metas_current[i] if i < len(metas_current) else {})
+    
+    # 2. if history_prompt != none, do semantic search with history prompt
+    if history_prompt:
+        print(f"=== SEARCHING WITH HISTORY: {history_prompt[:50]}... ===")
+        results_history = collection.query(
+            query_texts=[history_prompt],
+            n_results=10,
+            include=["documents", "metadatas"]
+        )
+        
+        docs_history = results_history["documents"][0]
+        metas_history = results_history["metadatas"][0] if results_history["metadatas"] else []
+        
+        print(f"  History search returned {len(docs_history)} docs")
+        
+        # add searched result to all_docs and all_metadatas, avoid saving repeated results
+        for i, doc in enumerate(docs_history):
+            if doc not in all_docs:
+                all_docs.append(doc)
+                all_metadatas.append(metas_history[i] if i < len(metas_history) else {})
+    
+    print(f"=== COMBINED: {len(all_docs)} unique docs ===")
+    
+    # 3. if results too few, skip rerank
+    if len(all_docs) < 3:
         print("=== Too few docs, skipping rerank ===")
-        return format_docs(docs, metadatas)
+        return format_docs(all_docs, all_metadatas)
     
-    # 3. Use reranker 
-    print(f"=== RERANKING {len(docs)} DOCS ===")
-    pairs = [[prompt, doc] for doc in docs]
+    # 4. Rerank context
+    print(f"=== RERANKING {len(all_docs)} DOCS ===")
+    pairs = [[current_prompt, doc] for doc in all_docs]
     scores = reranker.compute_score(pairs, normalize=True)
     
-    # 4. Get the top 3 results
-    sorted_pairs = sorted(zip(docs, metadatas, scores), key=lambda x: x[2], reverse=True)
+    # 5. get the top 3 result
+    sorted_pairs = sorted(zip(all_docs, all_metadatas, scores), key=lambda x: x[2], reverse=True)
     
     print(f"=== RERANKED TOP 3 ===")
     for i, (doc, meta, score) in enumerate(sorted_pairs[:3]):
@@ -192,6 +191,7 @@ def format_docs(docs, metadatas):
         formatted_docs.append(f"[Topic: {topic}]\n{doc}")
     return "\n\n---\n\n".join(formatted_docs)
 
+
 # -------------------------
 # Chat
 # -------------------------
@@ -202,20 +202,18 @@ def chat(prompt):
     if mode == "direct":
         return "Hello! What can I help you with? You can ask me questions about the Boys' Brigade uniform."
 
-    # labels = detect_uniform_context(prompt)
-    
-    if history:
-        last_user = history[-1].get("user", "")
-        enhanced_prompt = f"{last_user} {prompt}"
-        print(f"=== ENHANCED PROMPT: {enhanced_prompt} ===")
+    # detect if is_follow_up, if yes, get last user prompt
+    if history and is_follow_up(prompt, history):
+        history_prompt = history[-1].get("user", "")
+        print(f"=== FOLLOW-UP DETECTED, using history for retrieval ===")
     else:
-        last_user = ""
-        enhanced_prompt = prompt
+        history_prompt = None
+        print(f"=== NEW TOPIC, no history for retrieval ===")
     
-    context = retrieve(enhanced_prompt)
+    # Dual-Query Retrieval
+    context = retrieve_with_context(prompt, history_prompt)
 
     print("=== CONTEXT START ===")
-    # print(f"Labels detected: {labels}")
     print(context)
     print("=== CONTEXT END ===")
 
@@ -240,7 +238,7 @@ RULES:
 5. If knowledge is insufficient, say "I cannot find this in my uniform knowledge base."
 6. Be precise about uniform regulations - include specific colours, placements, and dress codes when mentioned.
 7. **If the current question is a follow-up (e.g., "how about senior", "what about officers"), treat it as a continuation of the previous topic.**
-
+8. **If the user does not specify a section, provide the general answer.**
 KNOWLEDGE (use this only):
 -------------------------
 {context}
@@ -260,6 +258,7 @@ Previous Conversation:
     answer = response.text
     update_memory(prompt, answer)
     return answer
+
 
 # -------------------------
 # Main Loop
