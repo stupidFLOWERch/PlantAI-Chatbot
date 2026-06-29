@@ -40,8 +40,9 @@ def detect_intent(text):
 
     question_words = ["what", "why", "how", "when", "where", "can", "is", "are", "do", "does"]
     greeting_words = ["hi", "hello", "hey", "good morning", "good afternoon", "good night"]
-
+    thanks_words = ["thank you", "thanks", "tq", "thx", "ty", "appreciate it", "much appreciated"]
     is_greeting = any(re.search(rf"\b{word}\b", text) for word in greeting_words)
+    is_thanks = any(re.search(rf"\b{word}\b", text) for word in thanks_words)
     is_question = (
         "?" in text or
         any(word in text for word in question_words)
@@ -51,6 +52,9 @@ def detect_intent(text):
         return "question"
     if is_greeting:
         return "greeting"
+    if is_thanks:
+        return "thanks"
+
     return "question"
 
 
@@ -100,6 +104,8 @@ def route(intent):
         return "direct"
     if intent == "question":
         return "rag"
+    if intent == "thanks":
+        return "thanks"
     return "fallback"
 
 
@@ -201,6 +207,9 @@ def chat(prompt):
 
     if mode == "direct":
         return "Hello! What can I help you with? You can ask me questions about the Boys' Brigade uniform."
+
+    if mode == "thanks":
+        return "You're welcome! Feel free to ask if you have more questions."
 
     # detect if is_follow_up, if yes, get last user prompt
     if history and is_follow_up(prompt, history):

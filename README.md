@@ -19,7 +19,7 @@ A Retrieval-Augmented Generation (RAG) chatbot that provides accurate answers fr
 - text-embedding-3-small (embedding model)
 - BAAI/bge-reranker-v2-m3 (reranker)
 - Google Gemini (LLM)
-- 
+  
 ## How to Run
 
 ### 1. Clone this repository
@@ -52,6 +52,11 @@ python loader.py
 ```
 
 This will create the `chroma_db/` directory containing embedded chunks generated from `uniform_manual.json`.
+
+### 5. Run the Chatbot
+```bash
+python gen_ai.py
+```
 
 ## Disclaimer
 
