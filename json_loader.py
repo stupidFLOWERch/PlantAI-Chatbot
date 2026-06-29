@@ -12,22 +12,20 @@ except:
 collection = client.get_or_create_collection("uniform_manual")
 
 def build_embedding(chunk):
-    """
-    构建用于 embedding 的文本。
-    用自然语言格式，让向量检索更精准。
-    """
+    # use natural language format to make semantic search more precise
+
     topic = chunk.get("topic", "")
     content = chunk.get("content", "")
     applies_to = chunk.get("applies_to", [])
     
-    # 把 applies_to 展开成自然语言
+    #  extend applies_to to natural language
     if applies_to:
-        # 如果是列表，用 "and" 连接
+        # If it's a list, join the items with "and"
         applies_str = " and ".join(applies_to)
     else:
         applies_str = "all members"
     
-    # 自然语言格式
+    # Natural language format
     parts = [
         f"This document is about {topic}.",
         f"It applies to {applies_str}.",
